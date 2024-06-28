@@ -1,0 +1,54 @@
+Initialize an array of names: ["Natsu", "Rimuru", "Tanjiro", "Asta", "Valentine"]
+Display the array of names
+
+Loop indefinitely:
+    Display menu options:
+        1 - Display Sorted
+        2 - Display All Elements
+        3 - Read ith Element
+        4 - Replace ith Element
+        Prompt the user to select an option
+    
+    Read user's input
+
+    Try:
+        If input is "1":
+            Call displaySorted function with the name array
+
+        Else If input is "2":
+            Call displayAllElements function with the name array
+
+        Else If input is "3":
+            Call readIndex function with the name array
+            Exit loop
+
+        Else If input is "4":
+            Call replaceIndex function with the name array
+
+        Else:
+            Display "Invalid Option Please Try Again!"
+    
+    Catch InputMismatchException:
+        Display "Invalid Option. Please Try Again!"
+
+Function displaySorted(name):
+    Copy name array to sortedName array
+    Sort sortedName array in ascending order
+    Print sorted name array
+
+Function displayAllElements(name):
+    For each element in name array:
+        Print the element
+
+Function readIndex(name):
+    Prompt user to enter an index
+    Read index from user
+    Print the element at the specified index
+
+Function replaceIndex(name):
+    Prompt user to enter an index
+    Read index from user
+    Prompt user to enter a new value
+    Read new value from user
+    Replace the element at the specified index with the new value
+    Print the updated name array
