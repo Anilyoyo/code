@@ -1,12 +1,7 @@
-OUTPUT "Enter an integer: "
-INPUT num
-SET Rnum = 0
-
-WHILE num ≠ 0 DO
-    SET remainder = num MOD 10
-    SET Rnum = Rnum * 10 + remainder
-    SET num = num / 10
-END WHILE
-
-OUTPUT "The reversed number is: " + Rnum
-
+OUTPUT "are we insane?"
+INPUT ans
+IF ans = "yes" THEN
+	OUTPUT "correct"
+ELSE
+	OUTPUT "incorrect"
+ENDIF 
